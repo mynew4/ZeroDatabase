@@ -5485,7 +5485,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (449412,4494,2,7,100,0,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Scarlet Spellbinder - Start Combat Movement and Flee at 15% HP (Phase 3)'),
 (449413,4494,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Scarlet Spellbinder - Set Phase to 0 on Evade'),
 (450501,4505,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Bloodsail Deckhand - Flee at 15% HP'),
-(450801,4508,2,0,100,2,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Willix the Importer - Flee at 15% HP'),
 (450901,4509,1,0,100,0,1000,1000,0,0,1,-142,0,0,5,1,0,0,0,0,0,0,'Sargath - Say on Spawn'),
 (450902,4509,1,0,100,0,5000,5000,0,0,1,-143,0,0,5,1,0,0,0,0,0,0,'Sargath - Say 2 on Spawn'),
 (450903,4509,1,0,100,0,10000,10000,0,0,1,-144,0,0,5,1,0,0,0,0,0,0,'Sargath - Say 3 on Spawn'),
@@ -8062,10 +8061,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (720601,7206,0,0,100,3,4300,7800,30100,45400,11,10132,0,0,0,0,0,0,0,0,0,0,'Ancient Stone Keeper - Cast Sand Storms'),
 (720701,7207,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Doc Mixilpixil - Summon Stormwind City Guard on Hostile LOS'),
 (722601,7226,11,0,100,2,0,0,0,0,11,10092,0,0,0,0,0,0,0,0,0,0,'Sand Storm - Cast Sand Storm on Spawn'),
-(722801,7228,4,0,100,2,0,0,0,0,1,-695,0,0,0,0,0,0,0,0,0,0,'Ironaya - Yell on Aggro'),
-(722802,7228,9,0,100,3,0,5,2900,7300,11,8374,1,0,0,0,0,0,0,0,0,0,'Ironaya - Cast Arcing Smash'),
-(722803,7228,0,0,100,3,20800,31400,28900,49400,11,10101,4,1,0,0,0,0,0,0,0,0,'Ironaya - Cast Knock Away'),
-(722804,7228,0,0,100,3,29200,37400,26500,43400,11,11876,0,0,0,0,0,0,0,0,0,0,'Ironaya - Cast War Stomp'),
 (723201,7232,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Borgus Steelhand - Summon Stormwind City Guard on Hostile LOS'),
 (723401,7234,11,0,100,0,0,0,0,0,11,12787,0,0,0,0,0,0,0,0,0,0,'Ferocitas the Dream Eater - Cast Thrash on Spawn'),
 (723501,7235,0,0,100,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Gnarlpine Mystic - Stop Movement on Aggro'),
@@ -8437,7 +8432,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (773401,7734,9,0,100,1,500,1000,3000,4000,11,9613,1,0,0,0,0,0,0,0,0,0,'Ilifar - Cast Shadow Bolt'),
 (773402,7734,0,0,100,1,4000,7000,7000,9000,11,15584,1,1,0,0,0,0,0,0,0,0,'Ilifar - Cast Cleave'),
 (773801,7738,11,0,100,2,0,0,0,0,11,10869,0,1,0,0,0,0,0,0,0,0,'Burning Servant - Summon Embers on Spawn'),
-(776601,7766,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Tyrion - Summon Stormwind City Guard on Hostile LOS'),
 (776701,7767,9,0,100,1,0,10,8000,14000,11,2691,4,0,0,0,0,0,0,0,0,0,'Witherbark Felhunter - Cast Mana Burn'),
 (778901,7789,1,0,100,3,1000,3000,1800000,1800000,11,20798,0,1,0,0,0,0,0,0,0,0,'Sandfury Cretin - Cast Demon Skin on Spawn'),
 (778902,7789,0,0,100,3,5900,17600,9600,154000,11,14032,4,32,0,0,0,0,0,0,0,0,'Sandfury Cretin - Cast Shadow Word Pain'),
@@ -10443,8 +10437,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1054011,10540,2,0,100,0,15,0,0,0,22,2,0,0,0,0,0,0,0,0,0,0,'Vol\'jin - Set Phase 2 at 15% HP'),
 (1054012,10540,2,11,100,0,15,0,0,0,21,1,0,0,25,0,0,0,1,-47,0,0,'Vol\'jin - Start Movement and Flee at 15% HP (Phase 2)'),
 (1054013,10540,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Vol\'jin - On Evade set Phase to 0'),
-(1055601,10556,11,0,100,0,0,0,0,0,5,28,0,0,0,0,0,0,0,0,0,0,'Lazy Peon - Working Emote State on Spawn'),
-(1055602,10556,1,0,100,1,60000,180000,60000,120000,10,28,12,13,0,0,0,0,0,0,0,0,'Vagrant - Random Emote State OOC'),
 (1055801,10558,1,0,100,2,0,0,0,0,21,0,0,0,20,0,0,0,23,1,0,0,'Hearthsinger Forresten - Prevent Combat Movement and Prevent Melee and Set Phase 1 on Spawn'),
 (1055802,10558,9,1,100,3,5,30,2300,3900,11,16100,1,0,40,2,0,0,0,0,0,0,'Hearthsinger Forresten - Cast Shoot and Set Ranged Weapon Model (Phase 1)'),
 (1055803,10558,0,1,100,3,9000,14000,9000,14000,11,14443,1,1,40,2,0,0,0,0,0,0,'Hearthsinger Forresten - Cast Multi-Shot and Set Ranged Weapon Model (Phase 1)'),
@@ -12729,8 +12721,6 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1448101,14481,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Emmithue Smails - Summon Stormwind City Guard on Hostile LOS'),
 (1448301,14483,0,0,100,3,6000,10000,9000,12000,11,15284,1,1,0,0,0,0,0,0,0,0,'Dread Guard - Cast Cleave'),
 (1448302,14483,0,0,100,3,9000,12000,7000,12000,11,18663,1,0,0,0,0,0,0,0,0,0,'Dread Guard - Cast Shadow Shock'),
-(1448401,14484,11,0,100,0,0,0,0,0,11,23127,0,0,0,0,0,0,0,0,0,0,'Injured Peasant - Cast Death\'s Door on Spawn'),
-(1448501,14485,11,0,100,0,0,0,0,0,11,23127,0,0,0,0,0,0,0,0,0,0,'Plagued Peasant - Cast Death\'s Door on Spawn'),
 (1448701,14487,0,0,100,1,15600,15600,32000,35000,11,6306,1,0,0,0,0,0,0,0,0,0,'Gluggle - Cast Acid Splash'),
 (1448702,14487,2,0,100,0,15,0,0,0,25,0,0,0,1,-47,0,0,0,0,0,0,'Gluggle - Flee at 15% HP'),
 (1448901,14489,11,0,100,0,0,0,0,0,21,0,0,0,20,0,0,0,0,0,0,0,'Scourge Archer - Prevent Combat Movement and Prevent Melee on Spawn'),
@@ -13494,8 +13484,7 @@ INSERT INTO `creature_ai_scripts` VALUES
 (1686101,16861,0,0,90,3,0,0,8000,8000,11,28413,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Aura of Agony'),
 (1686102,16861,0,0,95,3,1000,1000,4000,4000,11,15284,1,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Cleave'),
 (1686103,16861,0,0,80,3,3000,3000,5000,5000,11,28412,4,0,0,0,0,0,0,0,0,0,'Death Lord - Casts Death Coil'),
-(1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons and Yell on Aggro'),
-(1780401,17804,10,0,100,0,0,15,0,0,12,68,1,600000,0,0,0,0,0,0,0,0,'Squire Rowe - Summon Stormwind City Guard on Hostile LOS');
+(1720901,17209,4,0,100,0,0,0,0,0,12,9526,1,30000,12,9526,1,30000,1,-549,0,0,'William Kielar - Summon Enraged Gryphons and Yell on Aggro');
 /*!40000 ALTER TABLE `creature_ai_scripts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
