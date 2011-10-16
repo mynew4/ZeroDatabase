@@ -37,6 +37,15 @@ CREATE TABLE `creature_linking_template` (
 
 LOCK TABLES `creature_linking_template` WRITE;
 /*!40000 ALTER TABLE `creature_linking_template` DISABLE KEYS */;
+INSERT INTO creature_linking_template VALUES
+(11658,409,448,256),
+(11661,409,12259,7),
+(11662,409,12098,135),
+(11666,409,12057,7),
+(11672,409,11988,39),
+(11673,409,11982,1024),
+(12099,409,12057,2),
+(12119,409,12118,521);
 /*!40000 ALTER TABLE `creature_linking_template` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
