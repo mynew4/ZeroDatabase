@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,12 +37,12 @@ DROP TABLE IF EXISTS `creature_linking_template`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `creature_linking_template` (
-  `entry` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'creature_template.entry of the slave mob that is linked',
-  `map` mediumint(8) unsigned NOT NULL COMMENT 'Id of map of the mobs',
-  `master_entry` int(10) unsigned NOT NULL COMMENT 'master to trigger events',
-  `flag` mediumint(8) unsigned NOT NULL COMMENT 'flag - describing what should happen when',
+  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'creature_template.entry of the slave mob that is linked',
+  `map` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Id of map of the mobs',
+  `master_entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'master to trigger events',
+  `flag` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'flag - describing what should happen when',
   PRIMARY KEY (`entry`,`map`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature Linking System';
+) ENGINE=MyISAM AUTO_INCREMENT=16804 DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED COMMENT='Creature Linking System';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +51,7 @@ CREATE TABLE `creature_linking_template` (
 
 LOCK TABLES `creature_linking_template` WRITE;
 /*!40000 ALTER TABLE `creature_linking_template` DISABLE KEYS */;
-INSERT INTO creature_linking_template VALUES
+INSERT INTO `creature_linking_template` (`entry`, `map`, `master_entry`, `flag`) VALUES
 (2532,0,2533,656),
 (5277,109,5709,1),
 (5280,109,5709,1),
@@ -73,4 +87,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

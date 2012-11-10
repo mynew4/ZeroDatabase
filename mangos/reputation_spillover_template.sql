@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -46,7 +60,7 @@ CREATE TABLE `reputation_spillover_template` (
 
 LOCK TABLES `reputation_spillover_template` WRITE;
 /*!40000 ALTER TABLE `reputation_spillover_template` DISABLE KEYS */;
-INSERT INTO `reputation_spillover_template` VALUES
+INSERT INTO `reputation_spillover_template` (`faction`, `faction1`, `rate_1`, `rank_1`, `faction2`, `rate_2`, `rank_2`, `faction3`, `rate_3`, `rank_3`, `faction4`, `rate_4`, `rank_4`) VALUES
 (21,369,0.5,7,470,0.5,7,577,0.5,7,0,0,0),
 (47,72,0.25,7,54,0.25,7,69,0.25,7,0,0,0),
 (54,47,0.25,7,72,0.25,7,69,0.25,7,0,0,0),
@@ -71,4 +85,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

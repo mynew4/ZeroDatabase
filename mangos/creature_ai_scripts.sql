@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -56,7 +70,7 @@ CREATE TABLE `creature_ai_scripts` (
 
 LOCK TABLES `creature_ai_scripts` WRITE;
 /*!40000 ALTER TABLE `creature_ai_scripts` DISABLE KEYS */;
-INSERT INTO `creature_ai_scripts` VALUES
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (601,6,4,0,30,0,0,0,0,0,1,-7,-8,0,0,0,0,0,0,0,0,0,'Kobold Vermin - Random Say on Aggro'),
 (3001,30,11,0,100,0,0,0,0,0,11,11959,0,1,0,0,0,0,0,0,0,0,'Forest Spider - Cast Poison Proc on Spawn'),
 (3801,38,4,0,30,0,0,0,0,0,1,-2,-3,-4,0,0,0,0,0,0,0,0,'Defias Thug - Random Say on Aggro'),
@@ -8812,11 +8826,11 @@ INSERT INTO `creature_ai_scripts` VALUES
 (840903,8409,4,0,100,0,0,0,0,0,11,9672,1,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt and Set Phase 1 on Aggro'),
 (840904,8409,9,5,100,1,0,40,3400,4800,11,9672,1,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frostbolt (Phase 1)'),
 (840905,8409,3,5,100,0,7,0,0,0,21,1,0,0,23,1,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement and Set Phase 2 when Mana is at 7% (Phase 1)'),
-(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)'),
+(840906,8409,9,5,100,0,35,80,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement at 35 Yards (Phase 1)');
+INSERT INTO `creature_ai_scripts` (`id`, `creature_id`, `event_type`, `event_inverse_phase_mask`, `event_chance`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action1_type`, `action1_param1`, `action1_param2`, `action1_param3`, `action2_type`, `action2_param1`, `action2_param2`, `action2_param3`, `action3_type`, `action3_param1`, `action3_param2`, `action3_param3`, `comment`) VALUES
 (840907,8409,9,5,100,0,5,15,0,0,21,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Prevent Combat Movement at 15 Yards (Phase 1)'),
 (840908,8409,9,5,100,0,0,5,0,0,21,1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Start Combat Movement Below 5 Yards (Phase 1)'),
-(840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)');
-INSERT INTO `creature_ai_scripts` VALUES
+(840909,8409,3,3,100,1,100,15,100,100,23,-1,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase 1 when Mana is above 15% (Phase 2)'),
 (840910,8409,9,0,100,1,0,8,13000,16000,11,11831,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Nova'),
 (840911,8409,27,0,100,1,12544,1,15000,30000,11,12544,0,1,0,0,0,0,0,0,0,0,'Caravan Master Tset - Cast Frost Armor on Missing Buff'),
 (840912,8409,7,0,100,0,0,0,0,0,22,0,0,0,0,0,0,0,0,0,0,0,'Caravan Master Tset - Set Phase to 0 on Evade'),
@@ -13508,4 +13522,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

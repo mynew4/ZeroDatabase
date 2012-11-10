@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -67,7 +81,7 @@ CREATE TABLE `gameobject_template` (
 
 LOCK TABLES `gameobject_template` WRITE;
 /*!40000 ALTER TABLE `gameobject_template` DISABLE KEYS */;
-INSERT INTO `gameobject_template` VALUES
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `flags`, `size`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `mingold`, `maxgold`, `ScriptName`) VALUES
 (31,2,6,'Old Lion Statue',84,0,0.63,43,73,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (32,3,10,'Sunken Chest',12,4,1,43,1683,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
 (33,2,1,'Locked Chest',0,0,1.33,43,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,''),
@@ -10666,4 +10680,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

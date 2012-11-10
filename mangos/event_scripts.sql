@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -49,7 +63,7 @@ CREATE TABLE `event_scripts` (
 
 LOCK TABLES `event_scripts` WRITE;
 /*!40000 ALTER TABLE `event_scripts` DISABLE KEYS */;
-INSERT INTO `event_scripts` VALUES
+INSERT INTO `event_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES
 (259,2,10,1770,300000,0,0,0,0,0,0,0,881.63,1230.37,47.83,3.1,''),
 (264,3,10,2044,300000,0,0,0,0,0,0,0,-9548.42,-1440.2,62.29,2.19,''),
 (364,5,10,2624,900000,0,0,0,0,0,0,0,-12179.4,644.22,-67.1,5.18,''),
@@ -353,4 +367,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

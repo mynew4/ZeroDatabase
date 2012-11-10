@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -103,7 +117,7 @@ CREATE TABLE `creature_template` (
 
 LOCK TABLES `creature_template` WRITE;
 /*!40000 ALTER TABLE `creature_template` DISABLE KEYS */;
-INSERT INTO `creature_template` VALUES
+INSERT INTO `creature_template` (`entry`, `KillCredit1`, `KillCredit2`, `modelid_1`, `modelid_2`, `name`, `subname`, `gossip_menu_id`, `minlevel`, `maxlevel`, `minhealth`, `maxhealth`, `minmana`, `maxmana`, `armor`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `PetSpellDataId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Civilian`, `RacialLeader`, `RegenHealth`, `equipment_id`, `trainer_id`, `vendor_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`) VALUES
 (1,0,0,10045,0,'Waypoint (Only GM can see it)','Visual',0,63,63,9999,9999,0,0,0,35,35,0,0.91,1.14286,0,3,7,7,0,3,1,2000,2200,0,4096,0,8,0,0,0,0,1.76,2.42,100,8,5242886,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,1,0,0,1,0,0,0,0,130,''),
 (2,0,0,262,0,'Spawn Point (Only GM can see it)',NULL,0,63,63,9999,9999,0,0,0,35,35,0,0,1.14286,0,3,11,11,0,5,1,1800,1900,0,0,0,0,0,0,0,0,387.6,532.95,100,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,222,1110,'',0,3,0,0,1,0,0,0,0,0,''),
 (3,0,0,987,0,'Flesh Eater',NULL,0,24,25,661,710,0,0,1026,21,21,0,0.777776,1.14286,0,0,36,46,0,19,1,2500,0,1,524288,0,0,0,0,0,0,42.1344,57.9348,100,6,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,32,47,'',1,3,0,0,1,0,0,0,8388624,0,''),
@@ -4748,12 +4762,12 @@ INSERT INTO `creature_template` VALUES
 (6375,0,0,6757,0,'Thunderhead Hippogryph',NULL,0,46,48,2483,2705,0,0,2834,14,14,0,1.2,1.42857,0,0,79,100,0,41,1,2000,0,1,0,0,0,0,0,0,0,60.016,82.522,100,1,0,6375,0,6375,0,0,0,0,0,0,12553,0,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,''),
 (6376,0,0,5093,0,'Wren Darkspring','Demon Trainer',0,5,5,166,166,230,230,20,875,875,4,1,1.14286,1.15,0,6,8,0,3,1,1960,2156,8,0,0,0,3,0,3,0,8.624,11.858,100,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,3,0,0,1,838,0,0,0,2,''),
 (6377,0,0,10894,0,'Thunderhead Stagwing',NULL,0,48,50,2658,2883,0,0,2944,14,14,0,1.1,1.14286,0,0,84,106,0,44,1,2000,0,1,0,0,0,0,0,0,0,62.8672,86.4424,100,1,0,6377,0,6377,0,0,0,0,0,0,12553,11019,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,''),
-(6378,0,0,10893,0,'Thunderhead Skystormer',NULL,0,50,51,2338,2541,1807,1923,2477,14,14,0,1.1,1.14286,0,0,82,103,0,43,1,2000,0,2,0,0,0,0,0,0,0,63.7824,87.7008,100,1,0,6378,0,6378,0,0,0,0,0,0,12553,6535,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,''),
+(6378,0,0,10893,0,'Thunderhead Skystormer',NULL,0,50,51,2338,2541,1807,1923,2477,14,14,0,1.1,1.14286,0,0,82,103,0,43,1,2000,0,2,0,0,0,0,0,0,0,63.7824,87.7008,100,1,0,6378,0,6378,0,0,0,0,0,0,12553,6535,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,'');
+INSERT INTO `creature_template` (`entry`, `KillCredit1`, `KillCredit2`, `modelid_1`, `modelid_2`, `name`, `subname`, `gossip_menu_id`, `minlevel`, `maxlevel`, `minhealth`, `maxhealth`, `minmana`, `maxmana`, `armor`, `faction_A`, `faction_H`, `npcflag`, `speed_walk`, `speed_run`, `scale`, `rank`, `mindmg`, `maxdmg`, `dmgschool`, `attackpower`, `dmg_multiplier`, `baseattacktime`, `rangeattacktime`, `unit_class`, `unit_flags`, `dynamicflags`, `family`, `trainer_type`, `trainer_spell`, `trainer_class`, `trainer_race`, `minrangedmg`, `maxrangedmg`, `rangedattackpower`, `type`, `type_flags`, `lootid`, `pickpocketloot`, `skinloot`, `resistance1`, `resistance2`, `resistance3`, `resistance4`, `resistance5`, `resistance6`, `spell1`, `spell2`, `spell3`, `spell4`, `PetSpellDataId`, `mingold`, `maxgold`, `AIName`, `MovementType`, `InhabitType`, `Civilian`, `RacialLeader`, `RegenHealth`, `equipment_id`, `trainer_id`, `vendor_id`, `mechanic_immune_mask`, `flags_extra`, `ScriptName`) VALUES
 (6379,0,0,10892,0,'Thunderhead Patriarch',NULL,0,52,54,3176,3283,0,0,3162,14,14,0,1.1,1.14286,0,0,90,114,0,47,1,2000,0,1,0,0,0,0,0,0,0,66.4224,91.3308,100,1,0,6379,0,6379,0,0,0,0,0,0,12553,6268,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,''),
 (6380,0,0,10891,0,'Thunderhead Consort',NULL,0,52,54,2489,2719,1923,2041,2566,14,14,0,1.1,1.14286,0,0,85,107,0,44,1,2000,0,2,0,0,0,0,0,0,0,66.4224,91.3308,100,1,0,6380,0,6380,0,0,0,0,0,0,0,12553,0,0,0,0,0,'EventAI',1,3,0,0,1,0,0,0,0,0,''),
 (6382,0,0,5085,0,'Jubahl Corpseseeker','Demon Trainer',0,60,60,3857,3857,5751,5751,0,875,875,6,1,1.14286,0,0,164,212,0,87,1,2000,0,8,4608,0,0,3,0,3,0,74.448,102.366,100,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,3,0,0,1,110,0,0,0,2,''),
-(6386,0,0,2418,0,'Ward of Zanzil',NULL,0,46,46,5,5,0,0,0,16,16,0,0.82,1.14286,0,0,111,132,0,56,1,1550,1705,0,0,0,0,0,0,0,0,62.744,86.273,100,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,191,'',0,3,0,0,1,0,0,0,16384,0,'');
-INSERT INTO `creature_template` VALUES
+(6386,0,0,2418,0,'Ward of Zanzil',NULL,0,46,46,5,5,0,0,0,16,16,0,0.82,1.14286,0,0,111,132,0,56,1,1550,1705,0,0,0,0,0,0,0,0,62.744,86.273,100,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,191,'',0,3,0,0,1,0,0,0,16384,0,''),
 (6387,0,0,5108,0,'Dranh','Skinning Trainer',0,15,15,644,644,0,0,20,104,104,19,1,1.14286,1.35,0,17,22,0,9,1,2000,0,1,4608,0,0,2,0,0,0,24.552,33.759,100,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'',0,1,0,0,1,193,0,0,0,2,''),
 (6388,0,0,200,0,'Zanzil Skeleton',NULL,0,45,45,916,916,0,0,0,16,16,0,0.99,1.14286,0,0,108,129,0,55,1,1560,1716,0,0,0,0,0,0,0,0,59.0304,81.1668,100,6,0,6388,0,0,0,0,0,0,0,0,0,0,0,0,0,36,181,'',1,3,0,0,1,0,0,0,8388624,0,''),
 (6389,0,0,5345,0,'Deathguard Podrig',NULL,0,25,25,1240,1240,0,0,0,68,68,2,1,1.14286,0,0,31,40,0,16,1,2000,0,1,37376,0,0,0,0,0,0,38.72,53.24,100,7,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,'EventAI',0,3,0,0,1,319,0,0,0,2,''),
@@ -9208,4 +9222,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed

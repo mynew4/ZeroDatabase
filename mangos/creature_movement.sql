@@ -1,8 +1,22 @@
--- MySQL dump 10.13  Distrib 5.5.16, for Linux (x86_64)
 --
--- Host: localhost    Database: zp_world
--- ------------------------------------------------------
--- Server version	5.5.16-log
+--
+-- Copyright (C) 2005-2012 MaNGOS <http://getmangos.com/>
+-- Copyright (C) 2009-2012 MaNGOSZero <https://github.com/mangos-zero>
+--
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+--
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -51,7 +65,7 @@ CREATE TABLE `creature_movement` (
 
 LOCK TABLES `creature_movement` WRITE;
 /*!40000 ALTER TABLE `creature_movement` DISABLE KEYS */;
-INSERT INTO `creature_movement` VALUES
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (51,1,-4981.08,-1163.04,501.647,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (51,2,-4999.42,-1182.11,501.66,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (51,3,-4997.61,-1210.09,501.678,0,0,0,0,0,0,0,0,0,0,0,0,0),
@@ -16516,11 +16530,11 @@ INSERT INTO `creature_movement` VALUES
 (27290,135,-1483.8,1482.15,58.9251,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,136,-1471.32,1507.22,58.9251,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,137,-1464.94,1519.68,58.9251,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(27290,138,-1452.27,1544.64,58.9251,0,0,0,0,0,0,0,0,0,0,0,0,0),
+(27290,138,-1452.27,1544.64,58.9251,0,0,0,0,0,0,0,0,0,0,0,0,0);
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (27290,139,-1442.94,1584.75,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,140,-1452.7,1610.98,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
-(27290,141,-1464.1,1641.7,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0);
-INSERT INTO `creature_movement` VALUES
+(27290,141,-1464.1,1641.7,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,142,-1474.86,1647.49,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,143,-1500.84,1657.91,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
 (27290,144,-1521.76,1671.96,58.9255,0,0,0,0,0,0,0,0,0,0,0,0,0),
@@ -32788,8 +32802,7 @@ INSERT INTO `creature_movement` VALUES
 (79720,41,-8742.16,710.686,98.2678,0,0,2000005067,0,0,0,0,0,0,0,3.9157,0,0),
 (79720,42,-8738.48,700.884,98.718,0,0,0,0,0,0,0,0,0,0,5.07181,0,0),
 (79720,43,-8752.58,688.263,100.448,0,0,0,0,0,0,0,0,0,0,3.87172,0,0),
-(79720,44,-8773.14,671.75,103.092,0,0,0,0,0,0,0,0,0,0,3.81831,0,0);
-INSERT INTO `creature_movement` VALUES
+(79720,44,-8773.14,671.75,103.092,0,0,0,0,0,0,0,0,0,0,3.81831,0,0),
 (79720,45,-8774.24,667.734,103.092,0,0,2000005068,0,0,0,0,0,0,0,4.44349,0,0),
 (79720,46,-8762.72,649.633,103.733,0,0,0,0,0,0,0,0,0,0,5.27915,0,0),
 (79720,47,-8759.08,635.326,102.912,0,0,0,0,0,0,0,0,0,0,4.96185,0,0),
@@ -32810,7 +32823,8 @@ INSERT INTO `creature_movement` VALUES
 (79720,62,-8830.06,673.308,98.2819,0,0,0,0,0,0,0,0,0,0,0.540053,0,0),
 (79720,63,-8826.73,680.102,97.2982,0,0,0,0,0,0,0,0,0,0,1.11496,0,0),
 (79720,64,-8833.85,697.773,97.5546,0,0,0,0,0,0,0,0,0,0,1.95377,0,0),
-(79720,65,-8840.86,711.403,97.5683,0,0,2000005073,0,0,0,0,0,0,0,2.10928,0,0),
+(79720,65,-8840.86,711.403,97.5683,0,0,2000005073,0,0,0,0,0,0,0,2.10928,0,0);
+INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
 (79720,66,-8840.99,722.775,97.3683,0,0,0,0,0,0,0,0,0,0,1.58149,0,0),
 (79720,67,-8826.64,729.331,98.4387,0,0,0,0,0,0,0,0,0,0,0.428527,0,0),
 (79720,68,-8816.81,738.407,97.9223,0,0,0,0,0,0,0,0,0,0,0.745828,0,0),
@@ -40069,4 +40083,3 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed
